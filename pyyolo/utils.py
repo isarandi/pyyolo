@@ -9,10 +9,10 @@ from ctypes import *
 from typing import List, Tuple
 
 import cv2
-from darknet import c_array, IMAGE, METADATA, predict_image, get_network_boxes, \
+from pyyolo.darknet import c_array, IMAGE, METADATA, predict_image, get_network_boxes, \
     do_nms_obj, do_nms_sort, free_image, free_detections, ndarray_image
-import darknet
-from yolo_data import BBox, YoloData
+import pyyolo.darknet
+from pyyolo.yolo_data import BBox, YoloData
 
 
 def load_image(filename, flags=None):
