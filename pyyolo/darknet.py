@@ -98,7 +98,6 @@ predict_image = None
 
 
 lib_path = find_lib_path(DARKNET_SO)
-print lib_path
 if lib_path is not None:
     lib = CDLL(lib_path, RTLD_GLOBAL)
     lib.network_width.argtypes = [c_void_p]
