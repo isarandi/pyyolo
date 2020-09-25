@@ -98,7 +98,7 @@ def load_net(cfg_filepath, weights_filepath, clear):
     :param clear: True if you want to clear the weights otherwise False
     :return: darknet network object
     """
-    return darknet.load_net(cfg_filepath, weights_filepath, clear)
+    return pyyolo.darknet.load_net(cfg_filepath, weights_filepath, clear)
 
 
 def load_meta(meta_filepath):
@@ -108,7 +108,7 @@ def load_meta(meta_filepath):
     :param meta_filepath: metadata file path
     :return: darknet metadata object
     """
-    return darknet.load_meta(meta_filepath)
+    return pyyolo.darknet.load_meta(meta_filepath)
 
 
 def load_names(names_filepath):
